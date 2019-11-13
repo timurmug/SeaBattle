@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaBattle.Android", "SeaBattle\SeaBattle.Android\SeaBattle.Android.csproj", "{355E7BC0-D818-4FA3-8B5F-9B41BEA91CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaBattle", "SeaBattle\SeaBattle\SeaBattle.csproj", "{42FD5F7A-2802-49EA-9A36-A438539C44CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{355E7BC0-D818-4FA3-8B5F-9B41BEA91CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355E7BC0-D818-4FA3-8B5F-9B41BEA91CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355E7BC0-D818-4FA3-8B5F-9B41BEA91CBB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{355E7BC0-D818-4FA3-8B5F-9B41BEA91CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355E7BC0-D818-4FA3-8B5F-9B41BEA91CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355E7BC0-D818-4FA3-8B5F-9B41BEA91CBB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{42FD5F7A-2802-49EA-9A36-A438539C44CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FD5F7A-2802-49EA-9A36-A438539C44CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FD5F7A-2802-49EA-9A36-A438539C44CC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{42FD5F7A-2802-49EA-9A36-A438539C44CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FD5F7A-2802-49EA-9A36-A438539C44CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FD5F7A-2802-49EA-9A36-A438539C44CC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94774727-6620-4CA1-9DC4-1086DB71692A}
+	EndGlobalSection
+EndGlobal
