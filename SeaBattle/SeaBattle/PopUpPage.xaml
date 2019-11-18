@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:seabattle="clr-namespace:SeaBattle"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 x:Class="SeaBattle.PopUpPage">
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation DurationIn="400"
+                                   DurationOut="300"
+                                   EasingIn="SinOut"
+                                   EasingOut="SinIn"
+                                   HasBackgroundAnimation="True"
+                                   PositionIn="Center"
+                                   PositionOut="Center"
+                                   ScaleIn="0"
+                                   ScaleOut="0"
+                                  />
+    </pages:PopupPage.Animation>
+
+    <seabattle:CustomFrame VerticalOptions="Center" CornerRadius="20,20,20,20" Margin="20,0,20,0">
+        <seabattle:CustomFrame.Content>
+            <StackLayout BackgroundColor="White" VerticalOptions="Center" >
+                <Label x:Name="titleLabel" FontAttributes="Bold"></Label>
+                <Label x:Name="PopupTextLabel"></Label>
+            </StackLayout>
+        </seabattle:CustomFrame.Content>
+        </seabattle:CustomFrame>
+
+</pages:PopupPage>

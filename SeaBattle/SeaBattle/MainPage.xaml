@@ -2,13 +2,44 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SeaBattle"
-             x:Class="SeaBattle.MainPage">
+             x:Class="SeaBattle.MainPage"
+             NavigationPage.HasNavigationBar="false">
+    <ScrollView>
+        <StackLayout>
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+            <Label x:Name="spyLabel" Text="Spy on an adversary" FontSize="Micro" IsVisible="False"
+                   HorizontalOptions="EndAndExpand" TextColor="DarkBlue" 
+                   FontAttributes="Italic" Margin="0,20,20,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizerLabelTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <StackLayout x:Name="gridsSL" IsVisible="False">
+                <Label Text="Adversary's shoots" FontAttributes="Bold" Margin="20,0,0,0"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Grid ColumnSpacing="5" RowSpacing="5" x:Name="grid" IsEnabled="False">
+                    </Grid>
+                </StackLayout>
+
+                <Label Text="My shoots" FontAttributes="Bold" Margin="20,10,0,0"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Grid ColumnSpacing="5" RowSpacing="5" x:Name="grid2" IsEnabled="False">
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+
+            <Button x:Name="startButton"   
+                    BackgroundColor="CornflowerBlue" 
+                    Text="Start"
+                    Margin="0,20,0,20"
+                    CornerRadius="25"
+                    WidthRequest="120"
+                    HeightRequest="50"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="StartButton_Clicked"/>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
